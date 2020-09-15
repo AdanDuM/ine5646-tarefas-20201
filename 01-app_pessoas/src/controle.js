@@ -8,6 +8,7 @@ import {montaResposta} from './visao'
  * @param http.ServerResponse res
  */
 function atendeRequisicao (res) {
+  console.log('teste')
   const pessoasAcimaDaIdadeMinima = selecionaPessoas(pessoas, idadeMinima)
   montaResposta(res, pessoas, idadeMinima, pessoasAcimaDaIdadeMinima)
   res.end()
